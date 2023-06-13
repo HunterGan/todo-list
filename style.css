@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --light-black: #212832;
+    --black: #1E1E1E;
+    --bg-gray: #455A64;
+    --bg-yellow: #FED36A;
+}
+body {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--black);
+}
+.wrapper {
+    margin: 0 auto;
+    background-color: var(--light-black);
+    max-width: 960px;
+    min-width: 600px;
+}
+header {
+    height: 100px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+}
+form {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+}
+.new-todo, .user-todo, .time-date-todo {
+    margin: 10px auto 20px;
+    background-color: var(--bg-gray);
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+form input, form select {
+    padding: 0.5rem 1rem;
+}
+
+.new-todo, .user-todo {
+    width: 100%;
+}
+
+.time-date-todo {
+    box-sizing: border-box;
+    width: 40%;
+    height: 50px;
+    font-size: 16px;
+}
+
+form > button {
+    cursor: pointer;
+    background-color: var(--bg-yellow);
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 38px;
+    color: black;
+
+    border: none;
+    padding: 0.5rem 0.8rem;
+}
+form > button:hover {
+    background-color: rgb(255, 217, 0);
+}
+
+ul {
+    list-style: none;
+    width: 550px;
+    margin: 2rem auto;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+.todo-item1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+.todo-body {
+    display: flex;
+    justify-content: flex-start;
+}
+.todo-body > img {
+    margin: 0 15px;
+}
+.todo-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.todo-text span {
+    color: #B8B8B8;
+    font-weight: 400;
+}
+.close {
+    color: red;
+    cursor: pointer;
+    font-weight: bolder;
+    justify-self: flex-end;
+}
+.close:hover {
+    color:tomato
+}

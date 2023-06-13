@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Create New Task</h1>
+        </header>
+        <main>
+            <form autocomplete="off">
+                <label>
+                    Task Details
+                    <input class="new-todo" id="new-todo" name="todo" type="text" placeholder="new todo" />
+                </label>
+                <label>
+                    Select user
+                    <select class="user-todo" id="user-todo" name="user">
+                        <option disabled selected>select user</option>
+                    </select>
+                </label>
+                <label>
+                    Time & Date<br>
+                    <input class="time-date-todo" id="time-todo" name="time" type="time" placeholder="new todo" />
+                    <input class="time-date-todo" id="date-todo" name="date" type="date" placeholder="new todo" />
+                </label>
+                <button>Add Todo</button>
+            </form>
+            <ul id="todo-list">
+            </ul>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
